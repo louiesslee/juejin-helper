@@ -333,7 +333,7 @@ async function run(args) {
 
   const message = messageList.join(`\n${"-".repeat(15)}\n`);
   notification.pushMessage({
-    title: "掘金每日签到",
+    title: "github掘金每日签到",
     content: message,
     msgtype: "text"
   });
@@ -341,7 +341,7 @@ async function run(args) {
 
 run(process.argv.splice(2)).catch(error => {
   notification.pushMessage({
-    title: "掘金每日签到",
+    title: "github掘金每日签到",
     content: `<strong>Error</strong><pre>${error.message}</pre>`,
     msgtype: "html"
   });
